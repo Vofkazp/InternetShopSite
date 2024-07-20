@@ -1,0 +1,224 @@
+@mixin text-reset {
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+@mixin textRegular {
+  font-family: "Rubik-Regular", sans-serif;
+  @include text-reset;
+}
+
+@mixin textBold {
+  font-family: "Rubik-Bold", sans-serif;
+  @include text-reset;
+}
+
+@mixin desktopText-xs {
+  @include textRegular;
+  font-size: 12px;
+}
+
+@mixin desktopText-s {
+  @include textRegular;
+  font-size: 16px;
+}
+
+@mixin desktopText-m {
+  @include textRegular;
+  font-size: 18px;
+}
+
+@mixin desktopText-l {
+  @include textRegular;
+  font-size: 24px;
+}
+
+@mixin desktopText-xl {
+  @include textRegular;
+  font-size: 36px;
+}
+
+@mixin desktopTextBold-xs {
+  @include textBold;
+  font-size: 12px;
+}
+
+@mixin desktopTextBold-s {
+  @include textBold;
+  font-size: 16px;
+}
+
+@mixin desktopTextBold-m {
+  @include textBold;
+  font-size: 18px;
+}
+
+@mixin desktopTextBold-l {
+  @include textBold;
+  font-size: 24px;
+}
+
+@mixin desktopTextBold-xl {
+  @include textBold;
+  font-size: 36px;
+}
+
+@mixin desktopHeader-xs {
+  @include textBold;
+  font-size: 18px;
+}
+
+@mixin desktopHeader-s {
+  @include textBold;
+  font-size: 24px;
+}
+
+@mixin desktopHeader-m {
+  @include textBold;
+  font-size: 36px;
+}
+
+@mixin desktopHeader-l {
+  @include textBold;
+  font-size: 48px;
+}
+
+@mixin desktopHeader-xl {
+  @include textBold;
+  font-size: 64px;
+}
+
+@mixin mobileText-xs {
+  @include textRegular;
+  font-size: 8px;
+}
+
+@mixin mobileText-s {
+  @include textRegular;
+  font-size: 12px;
+}
+
+@mixin mobileText-m {
+  @include textRegular;
+  font-size: 14px;
+}
+
+@mixin mobileText-l {
+  @include textRegular;
+  font-size: 20px;
+}
+
+@mixin mobileText-xl {
+  @include textRegular;
+  font-size: 32px;
+}
+
+@mixin mobileTextBold-xs {
+  @include textBold;
+  font-size: 8px;
+}
+
+@mixin mobileTextBold-s {
+  @include textBold;
+  font-size: 12px;
+}
+
+@mixin mobileTextBold-m {
+  @include textBold;
+  font-size: 14px;
+}
+
+@mixin mobileTextBold-l {
+  @include textBold;
+  font-size: 20px;
+}
+
+@mixin mobileTextBold-xl {
+  @include textBold;
+  font-size: 32px;
+}
+2
+@mixin mobileHeader-xs {
+  @include textBold;
+  font-size: 16px;
+}
+
+@mixin mobileHeader-s {
+  @include textBold;
+  font-size: 20px;
+}
+
+@mixin mobileHeader-m {
+  @include textBold;
+  font-size: 24px;
+}
+
+@mixin mobileHeader-l {
+  @include textBold;
+  font-size: 36px;
+}
+
+@mixin mobileHeader-xl {
+  @include textBold;
+  font-size: 48px;
+}
+
+@mixin shadowDefault-xs {
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadowDefault-s {
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadowDefault-m {
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadowDefault-l {
+  box-shadow: 8px 16px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadowDefault-xl {
+  box-shadow: 16px 32px 64px 0 rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadowPrimary-xs {
+  box-shadow: 1px 2px 4px 0 rgba(255, 102, 51, 0.2);
+}
+
+@mixin shadowPrimary-s {
+  box-shadow: 2px 4px 8px 0 rgba(255, 102, 51, 0.2);
+}
+
+@mixin shadowPrimary-m {
+  box-shadow: 4px 8px 16px 0 rgba(255, 102, 51, 0.2);
+}
+
+@mixin shadowPrimary-l {
+  box-shadow: 8px 16px 32px 0 rgba(255, 102, 51, 0.2);
+}
+
+@mixin shadowPrimary-xl {
+  box-shadow: 16px 32px 64px 0 rgba(255, 102, 51, 0.2);
+}
+
+@mixin shadowSecondary-xs {
+  box-shadow: 1px 2px 4px 0 rgba(112, 192, 91, 0.2);
+}
+
+@mixin shadowSecondary-s {
+  box-shadow: 2px 4px 8px 0 rgba(112, 192, 91, 0.2);
+}
+
+@mixin shadowSecondary-m {
+  box-shadow: 4px 8px 16px 0 rgba(112, 192, 91, 0.2);
+}
+
+@mixin shadowSecondary-l {
+  box-shadow: 8px 16px 32px 0 rgba(112, 192, 91, 0.2);
+}
+
+@mixin shadowSecondary-xl {
+  box-shadow: 16px 32px 64px 0 rgba(112, 192, 91, 0.2);
+}
