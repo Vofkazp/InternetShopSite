@@ -11,5 +11,19 @@
 }
 
 @media (min-width: 1281px) {
+  .header {
 
+    .header-block {
+      width: 1208px;
+    }
+  }
+
+  .category {
+
+    .category-grid {
+      width: 1208px;
+      columns: 4 auto;
+      column-gap: 40px;
+    }
+  }
 }

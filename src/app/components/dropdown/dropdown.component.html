@@ -1,0 +1,19 @@
+<div class="dropdown">
+  <div class="drop-block" (click)="toggleDropdown()">
+    <div class="user-info">
+      <img src="{{user.avatar}}" alt="avatar">
+      <h3 class="name">{{ user.name }}</h3>
+    </div>
+    <div [ngClass]="isOpen?'drop-icon rotate':'drop-icon'">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.64 16.64C13.83 16.45 14.16 16.45 14.35 16.64L20 22.29L25.64 16.64C25.83 16.45 26.16 16.45 26.35 16.64C26.54 16.84 26.54 17.15 26.35 17.35L20.35 23.35C20.16 23.54 19.83 23.54 19.64 23.35L13.64 17.35C13.45 17.15 13.45 16.84 13.64 16.64Z"
+          fill="#414141" fill-rule="evenodd"/>
+      </svg>
+    </div>
+  </div>
+  <ul class="drop-list" *ngIf="isOpen">
+    <li class="list-item" (click)="toRout('/profile')">Профиль</li>
+    <li class="list-item" (click)="logOut()">Выйти</li>
+  </ul>
+</div>

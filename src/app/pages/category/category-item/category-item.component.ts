@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-category-item',
@@ -8,9 +9,14 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrl: './category-item.component.scss'
 })
 export class CategoryItemComponent implements OnInit {
-  @Input() name!: string;
+  name!: string | null;
+
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    console.log(this.name);
+    this.route.paramMap.subscribe(params => {
+      this.name = params.get('name');
+      console.log(this.name);
+    });
   }
 }

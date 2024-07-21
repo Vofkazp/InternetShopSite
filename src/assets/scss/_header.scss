@@ -1,0 +1,71 @@
+@import "variables";
+@import "mixins";
+
+.header {
+  position: relative;
+  background-color: $mainSurface;
+  @include shadowDefault-s;
+  height: 72px;
+  z-index: 5;
+
+  .header-block {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    .header-left-block {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      .logo {
+        display: block;
+        width: 152px;
+        height: 32px;
+        cursor: pointer;
+
+        svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .header-right-block {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+}
+
+.category {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  height: auto;
+  background-color: $mainSurface;
+  @include shadowDefault-m;
+  z-index: 1;
+
+  .category-grid {
+    margin: auto;
+    padding: 40px 0;
+
+    .category-item {
+      margin-bottom: 24px;
+      @include desktopTextBold-s;
+      cursor: pointer;
+
+      &:hover {
+        color: $mainPrimary;
+      }
+    }
+  }
+}

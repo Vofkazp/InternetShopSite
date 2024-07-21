@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+
+.btn {
+  display: block;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+
+  &.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &.icon-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+      .title {
+        color: rgb(255, 102, 51);
+      }
+    }
+
+    .num {
+      position: absolute;
+      right: 20px;
+      top: 4px;
+      background: $mainPrimary;
+      border-radius: 4px;
+      padding: 2px 4px;
+      @include mobileText-xs;
+      line-height: 100%;
+      color: $mainPrimaryText;
+    }
+
+    svg {
+      fill: $mainSurfaceText;
+    }
+
+    .title {
+      @include desktopText-xs;
+      color: $mainSurfaceText;
+    }
+  }
+
+  &.bg-main-secondary {
+    background-color: $mainSecondary;
+  }
+
+  .btn-title {
+    color: $mainSecondaryText;
+    @include desktopText-s;
+  }
+}
