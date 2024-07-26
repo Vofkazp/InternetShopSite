@@ -1,13 +1,54 @@
+@import "variables";
+@import "mixins";
+
 @media (max-width: 360px) {
 
 }
 
 @media (min-width: 361px) and (max-width: 768px) {
+  .page {
+    width: 336px;
 
+    .page-title {
+      margin-bottom: 36px;
+    }
+
+    .section {
+      margin-bottom: 80px;
+
+      .section-header {
+        margin-bottom: 16px;
+      }
+
+      .section-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+      }
+    }
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1280px) {
+  .page {
+    width: 736px;
 
+    .page-title {
+      margin-bottom: 40px;
+    }
+
+    .section {
+      margin-bottom: 100px;
+
+      .section-header {
+        margin-bottom: 32px;
+      }
+
+      .section-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1281px) {
@@ -25,5 +66,50 @@
       columns: 4 auto;
       column-gap: 40px;
     }
+  }
+
+  .page {
+    width: 1208px;
+
+    .page-title {
+      margin-bottom: 60px;
+    }
+
+    .section {
+      margin-bottom: 120px;
+
+      .section-header {
+        margin-bottom: 40px;
+      }
+
+      .section-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 40px;
+      }
+
+      .special-offers {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+
+        .offers-item {
+          padding: 30px 286px 44px 40px;
+
+          .title {
+            @include desktopHeader-s;
+            color: $mainSurfaceText;
+            margin-bottom: 6px;
+          }
+
+          .text {
+            @include desktopText-s;
+            color: $mainSurfaceText;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-block {
+    width: 1208px;
   }
 }

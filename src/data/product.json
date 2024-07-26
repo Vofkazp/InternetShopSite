@@ -1,0 +1,42 @@
+[
+  {
+    "id": 12,
+    "name": "Г/Ц Блинчики с мясом вес, Россия",
+    "price_with_card": "44,50",
+    "price_without_card": "50,50",
+    "rating": 1.8,
+    "discount": "-50%",
+    "isLike": true,
+    "photo": "/assets/images/blini.png"
+  },
+  {
+    "id": 14,
+    "name": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное",
+    "price_with_card": "55,80",
+    "price_without_card": "60,90",
+    "rating": 4.8,
+    "discount": "-10%",
+    "isLike": false,
+    "photo": "/assets/images/Milk.png"
+  },
+  {
+    "id": 76,
+    "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан",
+    "price_with_card": "125,20",
+    "price_without_card": "134,50",
+    "rating": 2.1,
+    "discount": "-30%",
+    "isLike": true,
+    "photo": "/assets/images/kolbasa.png"
+  },
+  {
+    "id": 95,
+    "name": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыром",
+    "price_with_card": "100,90",
+    "price_without_card": "111,30",
+    "rating": 4.7,
+    "discount": "",
+    "isLike": false,
+    "photo": "/assets/images/sosiski.png"
+  }
+]

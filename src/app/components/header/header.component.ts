@@ -21,6 +21,7 @@ import {NgIf} from "@angular/common";
 export class HeaderComponent implements OnInit {
   search = new FormControl('');
   isOpen: boolean = false;
+  isAuthorized: boolean = false;
   user = {name: 'Сергей', avatar: '/assets/images/avatar.png'};
   categoryList: { name: string, rout: string }[] = [
     {name: 'Молоко, сыр, яйцо', rout: 'milk'},

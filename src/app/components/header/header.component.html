@@ -20,16 +20,16 @@
         </svg>
       </div>
       <button class="btn with-icon bg-main-secondary" (click)="categoryToggle()">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M2.5 12C2.5 11.72 2.72 11.5 3 11.5L21 11.5C21.27 11.5 21.5 11.72 21.5 12C21.5 12.27 21.27 12.5 21 12.5L3 12.5C2.72 12.5 2.5 12.27 2.5 12Z"
-            fill="#FFFFFF" fill-rule="evenodd"/>
+            fill="currentColor" fill-rule="evenodd"/>
           <path
             d="M2.5 6C2.5 5.72 2.72 5.5 3 5.5L21 5.5C21.27 5.5 21.5 5.72 21.5 6C21.5 6.27 21.27 6.5 21 6.5L3 6.5C2.72 6.5 2.5 6.27 2.5 6Z"
-            fill="#FFFFFF" fill-rule="evenodd"/>
+            fill="currentColor" fill-rule="evenodd"/>
           <path
             d="M2.5 18C2.5 17.72 2.72 17.5 3 17.5L21 17.5C21.27 17.5 21.5 17.72 21.5 18C21.5 18.27 21.27 18.5 21 18.5L3 18.5C2.72 18.5 2.5 18.27 2.5 18Z"
-            fill="#FFFFFF" fill-rule="evenodd"/>
+            fill="currentColor" fill-rule="evenodd"/>
         </svg>
         <span class="btn-title">Каталог</span>
       </button>
@@ -86,7 +86,21 @@
         </svg>
         <span class="title">Корзина</span>
       </button>
-      <app-dropdown [user]="user"></app-dropdown>
+      <app-dropdown [user]="user" *ngIf="!isAuthorized"></app-dropdown>
+      <button class="btn bg-main-primary with-icon" *ngIf="isAuthorized">
+        <span class="btn-title">Войти</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.5 2C13.5 1.72 13.72 1.5 14 1.5L19 1.5C20.37 1.5 21.5 2.61 21.5 4L21.5 20C21.5 21.38 20.37 22.5 19 22.5L14 22.5C13.72 22.5 13.5 22.27 13.5 22C13.5 21.72 13.72 21.5 14 21.5L19 21.5C19.82 21.5 20.5 20.82 20.5 20L20.5 4C20.5 3.17 19.82 2.5 19 2.5L14 2.5C13.72 2.5 13.5 2.27 13.5 2Z"
+            fill="#FFFFFF" fill-rule="evenodd"/>
+          <path
+            d="M10.64 7.64C10.83 7.45 11.16 7.45 11.35 7.64L15.35 11.64C15.54 11.84 15.54 12.15 15.35 12.35L11.35 16.35C11.16 16.54 10.83 16.54 10.64 16.35C10.45 16.15 10.45 15.84 10.64 15.64L14.29 12L10.64 8.35C10.45 8.15 10.45 7.84 10.64 7.64Z"
+            fill="#FFFFFF" fill-rule="evenodd"/>
+          <path
+            d="M2.5 12C2.5 11.72 2.72 11.5 3 11.5L15 11.5C15.27 11.5 15.5 11.72 15.5 12C15.5 12.27 15.27 12.5 15 12.5L3 12.5C2.72 12.5 2.5 12.27 2.5 12Z"
+            fill="#FFFFFF" fill-rule="evenodd"/>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
